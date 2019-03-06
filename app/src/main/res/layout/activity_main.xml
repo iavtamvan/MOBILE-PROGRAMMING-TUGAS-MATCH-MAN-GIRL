@@ -2,7 +2,6 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -14,13 +13,41 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/empty_dice"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_width="wrap_content"
+            android:visibility="gone"/>
 
     <Button
             android:id="@+id/btn_putar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Putar"/>
+            android:text="Putar"
+            android:visibility="gone"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/dice_1"
+                   android:layout_weight="1"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:text="VS"
+                  android:textSize="30dp"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/dice_1"
+                   android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="MATCH"
+            android:layout_gravity="center"/>
+
 
 </LinearLayout>
