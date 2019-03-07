@@ -3,50 +3,41 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
         android:gravity="center"
         android:orientation="vertical"
         tools:context=".MainActivity">
-
-    <ImageView
-            android:id="@+id/dice_image"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/empty_dice"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:visibility="gone"/>
-
-    <Button
-            android:id="@+id/btn_putar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Putar"
-            android:visibility="gone"/>
-
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
+                  android:gravity="center"
                   android:orientation="horizontal">
 
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/dice_1"
-                   android:layout_weight="1"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivDadu1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/dice_1"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
 
         <TextView android:layout_width="wrap_content"
                   android:layout_height="match_parent"
                   android:gravity="center"
                   android:text="VS"
                   android:textSize="30dp"/>
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:src="@drawable/dice_1"
-                   android:layout_weight="1"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivDadu2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/dice_1"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
     </LinearLayout>
 
     <Button android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="MATCH"
+            android:id="@+id/btnMatch"
             android:layout_gravity="center"/>
 
 
