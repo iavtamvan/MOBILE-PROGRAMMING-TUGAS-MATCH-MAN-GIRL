@@ -1,4 +1,4 @@
-package com.iav.tugas2.presenter
+package com.iav.tugas2.presenterMain
 
 import android.widget.ImageView
 import com.iav.tugas2.R
@@ -18,7 +18,6 @@ class MainPresnter {
             2 -> R.drawable.cowok1
             else -> R.drawable.cowok2
         }
-
         ivCewek.setImageResource(drawableResCewek)
         ivCowok.setImageResource(drawableResCowok)
 

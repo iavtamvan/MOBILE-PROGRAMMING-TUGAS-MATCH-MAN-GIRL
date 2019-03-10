@@ -2,7 +2,7 @@ package com.iav.tugas2
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.iav.tugas2.presenter.MainPresnter
+import com.iav.tugas2.presenterMain.MainPresnter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
