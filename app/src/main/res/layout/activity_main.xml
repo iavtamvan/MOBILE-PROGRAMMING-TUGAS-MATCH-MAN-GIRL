@@ -12,6 +12,7 @@
             android:layout_height="wrap_content"
             android:text="Aplikasi Pasangan Cewek dan Cowok"
             android:gravity="center"
+            android:id="@+id/tvAppsPasangan"
             android:textColor="@android:color/black"
             android:textSize="20sp"/>
 
