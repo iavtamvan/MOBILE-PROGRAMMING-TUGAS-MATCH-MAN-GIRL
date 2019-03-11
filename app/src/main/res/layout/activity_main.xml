@@ -14,7 +14,7 @@
             android:gravity="center"
             android:id="@+id/tvAppsPasangan"
             android:textColor="@android:color/black"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/duapuluh_sp"/>
 
     <android.support.v7.widget.CardView
             android:layout_width="match_parent"
