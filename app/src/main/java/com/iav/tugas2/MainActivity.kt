@@ -16,6 +16,6 @@ class MainActivity : BaseActivity() {
         tvAppsPasangan.setOnClickListener(BaseActivity.ClickListener())
         tvAppsPasangan.setAnimationListener(BaseActivity.SimpleAnimationListener(this))
         mainPresnter = MainPresnter()
-        btnMatch.setOnClickListener { mainPresnter.pasangan(ivCewek, ivCowok) }
+        btnMatch.setOnClickListener { mainPresnter.pasangan(ivCewek, ivCowok, this) }
     }
 }
