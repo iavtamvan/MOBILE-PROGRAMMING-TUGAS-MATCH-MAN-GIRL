@@ -8,8 +8,8 @@ import java.util.*
 
 class MainPresnter {
     fun pasangan(ivCewek:ImageView, ivCowok:ImageView, context:Context ) {
-        val randomCewek = Random().nextInt(3) + 1
-        val randomCowok = Random().nextInt(3) + 1
+        val randomCewek = Random().nextInt(6) + 1
+        val randomCowok = Random().nextInt(13) + 1
         val drawableResCewek = when (randomCewek) {
             1 -> R.drawable.ayulest
             2 -> R.drawable.fuji
