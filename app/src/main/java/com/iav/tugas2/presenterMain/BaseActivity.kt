@@ -14,7 +14,6 @@ open class BaseActivity : AppCompatActivity() {
 
 
     class ClickListener : View.OnClickListener {
-        var hhhh
         internal var sentences = arrayOf(
             "What is design?",
             "Design is not just",
